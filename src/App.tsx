@@ -1,6 +1,12 @@
 
 import './App.css';
-import { MuiAutoComplite } from './components/MuiAutoComplete';
+import MuiUploader from "./components/MuiUploader"
+
+// import { MuiImagelist } from './components/MuiImagelist';
+// import { MuiAccordion } from './components/MuiAccordion';
+// import { MuiCard } from './components/MuiCard';
+// import { MuiLayout } from './components/MuiLayout';
+// import { MuiAutoComplite } from './components/MuiAutoComplete';
 // import { MuiRating } from './components/MuiRating';
 // import { MuiSwitch } from "./components/MuiSwitch"
 // import { MuiCheckBox } from './components/MuiCheckBox';
@@ -22,7 +28,12 @@ function App() {
       {/* <MuiCheckBox/> */}
       {/* <MuiSwitch/> */}
       {/* <MuiRating/> */}
-      <MuiAutoComplite/>
+      {/* <MuiAutoComplite/> */}
+      {/* <MuiLayout/> */}
+      {/* <MuiCard/> */}
+      {/* <MuiAccordion/> */}
+      {/* <MuiImagelist/> */}
+      <MuiUploader/>
     </div>
   )
 }
