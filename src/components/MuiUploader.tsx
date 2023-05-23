@@ -55,12 +55,24 @@ function UploadCSV() {
       setError('Invalid file format. Only CSV files are supported.');
       return;
     }
-
-    setFile(selectedFile);
-    setUploadProgress(0);
-    setError('');
-    uploadFile(selectedFile);
+  
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      const fileContent = event.target?.result as string;
+      const lines = fileContent.split('\n');
+      if (lines.length > 5000) {
+        setError('File size must be less than 5000 lines.');
+        return;
+      }
+  
+      setFile(selectedFile);
+      setUploadProgress(0);
+      setError('');
+      uploadFile(selectedFile);
+    };
+    reader.readAsText(selectedFile);
   };
+  
 
   const handleRemoveFile = () => {
     setFile(null);

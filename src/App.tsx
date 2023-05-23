@@ -1,6 +1,8 @@
 
 import './App.css';
-import MuiUploader from "./components/MuiUploader"
+
+import Campaign from "./components/Campaign"
+// import MuiUploader from "./components/MuiUploader"
 
 // import { MuiImagelist } from './components/MuiImagelist';
 // import { MuiAccordion } from './components/MuiAccordion';
@@ -33,7 +35,8 @@ function App() {
       {/* <MuiCard/> */}
       {/* <MuiAccordion/> */}
       {/* <MuiImagelist/> */}
-      <MuiUploader/>
+      {/* <MuiUploader/> */}
+      <Campaign/>
     </div>
   )
 }
