@@ -104,7 +104,7 @@ const Campaign = () => {
             <Box sx={{ mt: 2 }}>
               {/* src={NoCampaignImage} */}
               <img
-                src={process.env.PUBLIC_URL + '/image/campaign.png'}
+                src={'/images/campaign.png'}
                 alt="No Campaign"
                 style={{ width: "350px" }}
               />
