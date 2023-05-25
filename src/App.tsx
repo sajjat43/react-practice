@@ -1,7 +1,10 @@
 
 import './App.css';
 
-import Campaign from "./components/Campaign"
+import  MuiStepper  from './components/MuiStepper';
+// import {MuiList} from "./components/MuiList"
+// import Campaign from "./components/Campaign"
+// import  MuiLeadsPage  from './components/MuiLeadsPage';
 // import MuiUploader from "./components/MuiUploader"
 
 // import { MuiImagelist } from './components/MuiImagelist';
@@ -36,7 +39,10 @@ function App() {
       {/* <MuiAccordion/> */}
       {/* <MuiImagelist/> */}
       {/* <MuiUploader/> */}
-      <Campaign/>
+      {/* <Campaign/> */}
+      {/* <MuiLeadsPage/> */}
+     {/* <MuiList/> */}
+     <MuiStepper/>
     </div>
   )
 }
