@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
-import { Stepper, Step, StepLabel, Button, Grid, withStyles, StepConnector } from '@material-ui/core';
+import { Stepper, Step, StepLabel, Button, Grid, withStyles, StepConnector, Divider, Card,CardContent,Typography } from '@material-ui/core';
 
+import Campaign from './Campaign'
+import { MuiAccordion } from './MuiAccordion';
+import { MuiButton } from './MuiButton';
+import { MuiAutoComplite } from './MuiAutoComplete';
 const steps = [
   { label: 'Add leads', icon: '1' },
   { label: 'Create a sequence', icon: '2' },
@@ -10,7 +14,7 @@ const steps = [
 const StepperComponent = () => {
   const [activeStep, setActiveStep] = useState(0);
 
-  const handleStepClick = (stepIndex:number) => {
+  const handleStepClick = (stepIndex: number) => {
     setActiveStep(stepIndex);
   };
 
@@ -18,14 +22,30 @@ const StepperComponent = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
   };
 
-  // Custom styles for StepConnector
+  const getStepContent = (step: number) => {
+    switch (step) {
+      case 0:
+        return <Campaign  />
+      case 1:
+        return <MuiAccordion  />
+      case 2:
+        return <MuiButton/>
+      case 3:
+        return <MuiAutoComplite />
+      default:
+        return null
+    }
+  }
+  const renderContent = () => {
+    return getStepContent(activeStep)
+  }
   const StyledStepConnector = withStyles({
     line: {
-      display: 'none', // Hide the line connecting the steps
+      display: 'none', 
     },
   })(StepConnector);
 
-  // Custom styles for StepLabel
+ 
   const StyledStepLabel = withStyles({
     label: {
       display: 'flex',
@@ -35,34 +55,40 @@ const StepperComponent = () => {
   })(StepLabel);
 
   return (
-    <div>
+    <Card>
       <Stepper activeStep={activeStep} alternativeLabel connector={<StyledStepConnector />}>
         {steps.map((step, index) => (
-          <Step key={index}>
+          
+          <Step key={index} onClick={() => handleStepClick(index)}>
             <StyledStepLabel
-              onClick={() => handleStepClick(index)}
               style={{ cursor: 'pointer' }}
-              StepIconProps={{ icon: step.icon }}
+              StepIconProps={{ icon: step.icon }} 
             >
-              {step.label}
+               <Typography className='step-label'>{step.label}</Typography>
             </StyledStepLabel>
           </Step>
         ))}
       </Stepper>
-
-      <Grid container justifyContent="center">
+      <Divider />
+      <Grid >
         <Grid item>
+         
+          <CardContent>{renderContent()}</CardContent>
+          <Grid container justifyContent="center">
           <Button
             variant="contained"
             color="primary"
             onClick={handleNext}
             disabled={activeStep === steps.length - 1}
+            style={{ marginTop: '2rem' }}
           >
             {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
           </Button>
+          </Grid>
         </Grid>
+       
       </Grid>
-    </div>
+    </Card>
   );
 };
 
