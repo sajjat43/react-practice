@@ -2,7 +2,8 @@
 import './App.css';
 
 // import { Stepper } from '@mui/material';
-import  MuiStepper  from './components/MuiStepper';
+// import  MuiStepper  from './components/MuiStepper';
+import MuiPages  from './components/MuiPages';
 // import {MuiList} from "./components/MuiList"
 // import Campaign from "./components/Campaign"
 // import  MuiLeadsPage  from './components/MuiLeadsPage';
@@ -43,8 +44,9 @@ function App() {
       {/* <Campaign/> */}
       {/* <MuiLeadsPage/> */}
      {/* <MuiList/> */}
-     <MuiStepper/>
+     {/* <MuiStepper/> */}
      {/* <Stepper/> */}
+     <MuiPages/>
     </div>
   )
 }
