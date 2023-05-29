@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Stepper, Step, StepLabel, Button, Grid, withStyles, StepConnector, Divider, Card,CardContent,Typography } from '@material-ui/core';
 
 import Campaign from './Campaign'
+import MuiPage from "./MuiPages"
 import { MuiAccordion } from './MuiAccordion';
 import { MuiButton } from './MuiButton';
 import { MuiAutoComplite } from './MuiAutoComplete';
@@ -25,7 +26,7 @@ const StepperComponent = () => {
   const getStepContent = (step: number) => {
     switch (step) {
       case 0:
-        return <Campaign  />
+        return <MuiPage  />
       case 1:
         return <MuiAccordion  />
       case 2:

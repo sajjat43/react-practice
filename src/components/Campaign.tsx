@@ -10,7 +10,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
 import TextField from "@mui/material/TextField";
 import CloseIcon from "@mui/icons-material/Close";
-// import NoCampaignImage from "./image/campaign.png"; 
+
 const Campaign = () => {
   const [campaigns, setCampaigns] = useState<string[]>([]);
   const [open, setOpen] = useState(false);
