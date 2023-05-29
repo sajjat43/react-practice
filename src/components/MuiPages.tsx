@@ -54,7 +54,7 @@ const LeadListForm = () => {
           </Button>
         </Box>
       )}
-      <Dialog open={open} onClose={handleClose}>
+      <Dialog open={open} onClose={handleClose} maxWidth={"sm"} fullWidth>
         <DialogTitle sx={{ backgroundColor: 'primary.main', color: 'white', fontWeight: 'bold' }}>Create a list of leads</DialogTitle>
         <Divider sx={{ m: '0 !important' }} />
         <DialogContent>
@@ -103,6 +103,7 @@ const LeadListForm = () => {
             </Box>
           )}
         </DialogContent>
+        <Divider  />
         <DialogActions>
           <Button disabled={!leadsPackName} onClick={handleSubmit} color="primary">
             Create a list
