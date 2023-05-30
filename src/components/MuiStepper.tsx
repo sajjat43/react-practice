@@ -3,7 +3,7 @@ import { Stepper, Step, StepLabel, Button, Grid, withStyles, StepConnector, Divi
 
 import Campaign from './Campaign'
 import MuiPage from "./MuiPages"
-import { MuiAccordion } from './MuiAccordion';
+import  MuiPage2  from './MuiPage2';
 import { MuiButton } from './MuiButton';
 import { MuiAutoComplite } from './MuiAutoComplete';
 const steps = [
@@ -28,7 +28,7 @@ const StepperComponent = () => {
       case 0:
         return <MuiPage  />
       case 1:
-        return <MuiAccordion  />
+        return <MuiPage2  />
       case 2:
         return <MuiButton/>
       case 3:
