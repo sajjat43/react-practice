@@ -76,7 +76,7 @@ const StepperComponent = () => {
          
           <CardContent>{renderContent()}</CardContent>
           <Grid container justifyContent="center">
-          <Button
+          {/* <Button
             variant="contained"
             color="primary"
             onClick={handleNext}
@@ -84,7 +84,7 @@ const StepperComponent = () => {
             style={{ marginTop: '2rem' }}
           >
             {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
-          </Button>
+          </Button> */}
           </Grid>
         </Grid>
        

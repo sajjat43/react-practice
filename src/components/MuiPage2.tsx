@@ -13,7 +13,11 @@ const MuiPage2 = () => {
   const [showSavedTemplates, setShowSavedTemplates] = useState(false);
 
   const handleCardSelect = (cardIndex: number) => {
-    setSelectedCard(cardIndex);
+    if (selectedCard === cardIndex) {
+      setSelectedCard(null); 
+    } else {
+      setSelectedCard(cardIndex); 
+    }
   };
 
   const handleSelectTemplate = () => {
@@ -75,7 +79,7 @@ const MuiPage2 = () => {
               <Grid item xs={12} sm={6} md={4} lg={3}>
                 <Card sx={{ maxWidth: 345 }}>
                   <CardActionArea onClick={() => handleCardSelect(0)}>
-                    <CardMedia component="img" height="180" image={'/images/a.svg'} alt="green iguana"
+                    <CardMedia component="img" height="200" image={'/images/a.svg'} alt="green iguana"
                       sx={{ backgroundColor:  '#e3e8ef', justifyContent: 'center', alignItems: 'center', padding: '16%', width: '69%' }} />
                     <CardContent sx={{
                       borderTop: '1px solid',
@@ -116,8 +120,8 @@ const MuiPage2 = () => {
                   <CardActionArea onClick={() => handleCardSelect(1)}>
                     <CardMedia
                       component="img"
-                      height="180"
-                      image="/images/a.svg"
+                      height="200"
+                      image="/images/b.svg"
                       alt="green iguana"
                       sx={{
                         backgroundColor: '#e3e8ef',
@@ -171,8 +175,8 @@ const MuiPage2 = () => {
                   <CardActionArea onClick={() => handleCardSelect(2)}>
                     <CardMedia
                       component="img"
-                      height="180"
-                      image="/images/a.svg"
+                      height="200"
+                      image="/images/c.svg"
                       alt="green iguana"
                       sx={{
                         backgroundColor: '#e3e8ef',
@@ -224,8 +228,8 @@ const MuiPage2 = () => {
                   <CardActionArea onClick={() => handleCardSelect(3)}>
                     <CardMedia
                       component="img"
-                      height="180"
-                      image="/images/a.svg"
+                      height="200"
+                      image="/images/d.svg"
                       alt="green iguana"
                       sx={{
                         backgroundColor: '#e3e8ef',
