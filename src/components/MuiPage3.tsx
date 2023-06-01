@@ -3,6 +3,7 @@ import { Button, Checkbox, FormControlLabel, TextField, Select, MenuItem, Box,To
 import InfoIcon from '@mui/icons-material/Info';
 const MyComponent = () => {
 const tooltipText = "Pick this template to start getting more leads for your business";
+
 return (
 <Box>
   <Box>
@@ -45,51 +46,47 @@ return (
         </div>
       </Box>
       <Box id="two">
-        <p>Do not add a lead to the campaign if:</p>
-        <br />
-        <Box>
-          <Box>
-            <FormControlLabel control={<Checkbox id="reason-DUPLICATE" name="reason-DUPLICATE" />}
-            label={
-            <span>
-              Same leads found in other campaigns <span>(default)</span>
-            </span>
-            }
-            />
-          </Box>
-        </Box>
-        <Box>
-          <Box>
-            <FormControlLabel control={<Checkbox id="reason-IS_NOT_OPEN_PROFILE" name="reason-IS_NOT_OPEN_PROFILE" />}
-            label={
-            <span style={{ display: 'flex', alignItems: 'center' }}>
-              Does not have an open profile
-              <Tooltip title={tooltipText} placement="bottom" arrow>
-                    <InfoIcon sx={{ color: 'primary.main', marginLeft: '0.5rem' }} />
-                  </Tooltip>
-            </span>
-            }
-            />
-          </Box>
-        </Box>
-        <Box>
-          <FormControlLabel control={<Checkbox id="reason-NO_PHOTO" name="reason-NO_PHOTO" />}
-          label={<span>No photo on lead’s profile</span>}
-          />
-        </Box>
-        <Box>
-          <FormControlLabel control={<Checkbox id="reason-LESS_THAN_500_CONNECTIONS"
-            name="reason-LESS_THAN_500_CONNECTIONS" />}
-          label={<span>Less than 500 connections</span>}
-          />
-        </Box>
-        <Box>
-          <FormControlLabel control={<Checkbox id="reason-FREE_ACCOUNT" name="reason-FREE_ACCOUNT" />}
-          label={<span>Having a free LinkedIn account</span>}
-          />
-        </Box>
-        <p>Selecting these options will cause slower lead upload time.</p>
-      </Box>
+  <p>Do not add a lead to the campaign if:</p>
+  <br />
+  <Box>
+    <Box>
+      <FormControlLabel
+        control={<Checkbox id="reason-DUPLICATE" name="reason-DUPLICATE" />}
+        label={
+          <span>
+            Same leads found in other campaigns <span>(default)</span>
+          </span>
+        }
+      />
+    </Box>
+  </Box>
+  <Box>
+    <Box>
+      <FormControlLabel
+        control={<Checkbox id="reason-IS_NOT_OPEN_PROFILE" name="reason-IS_NOT_OPEN_PROFILE" />}
+        label={
+          <span style={{ display: 'flex', alignItems: 'center' }}>
+            Does not have an open profile
+            <Tooltip title={tooltipText} placement="bottom" arrow>
+              <InfoIcon sx={{ color: 'primary.main', marginLeft: '0.5rem' }} />
+            </Tooltip>
+          </span>
+        }
+      />
+    </Box>
+  </Box>
+  <Box>
+    <FormControlLabel control={<Checkbox id="reason-NO_PHOTO" name="reason-NO_PHOTO" />} label={<span>No photo on lead’s profile</span>} />
+  </Box>
+  <Box>
+    <FormControlLabel control={<Checkbox id="reason-LESS_THAN_500_CONNECTIONS" name="reason-LESS_THAN_500_CONNECTIONS" />} label={<span>Less than 500 connections</span>} />
+  </Box>
+  <Box>
+    <FormControlLabel control={<Checkbox id="reason-FREE_ACCOUNT" name="reason-FREE_ACCOUNT" />} label={<span>Having a free LinkedIn account</span>} />
+    <p>Selecting these options will cause slower lead upload time.</p>
+  </Box>
+</Box>
+
     </Box>
     <Box>
       <hr />
@@ -109,6 +106,8 @@ return (
   </Box>
 
 </Box>
+
+
 );
 };
 
