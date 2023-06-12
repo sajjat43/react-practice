@@ -5,7 +5,7 @@ import './App.css';
 
 // import { Stepper } from '@mui/material';
 // import  MuiStepper  from './components/MuiStepper';
-import {MuiLogin} from './components/MuiLogin';
+import MuiLogin from './components/MuiLogin';
 // import MuiPage3 from './components/MuiPage3'
 // import MuiPage2 from './components/MuiPage2'
 // import MuiPages  from './components/MuiPages';
