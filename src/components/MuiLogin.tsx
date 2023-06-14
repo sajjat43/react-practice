@@ -23,7 +23,7 @@ const App = () => {
         </Grid>
         <Grid item spacing={2} xs={12} container justifyContent="center">
           <Grid item>
-            <Button variant="contained" startIcon={<Facebook />}>
+            <Button variant="outlined" startIcon={<Facebook />}>
             
             </Button>
           </Grid>
@@ -75,25 +75,23 @@ const App = () => {
         <Grid item xs={12}>
           <Grid container justifyContent="center">
             <Grid item>
-              <div className={`overlay ${isSignUp ? 'overlay-right' : 'overlay-left'}`}>
-                <div className="overlay-panel">
+              
                   {isSignUp ? (
                     <>
                      <span >Already have an account?</span>
-                      <Button className="ghost" onClick={handleSignIn}>
+                      <Button  onClick={handleSignIn}>
                       Sign In
                       </Button>
                     </>
                   ) : (
                     <>
                       <span>Don't have an account?</span>
-                      <Button className="ghost" onClick={handleSignUp}>
+                      <Button  onClick={handleSignUp}>
                       Sign Up
                       </Button>
                     </>
                   )}
-                </div>
-              </div>
+               
             </Grid>
           </Grid>
         </Grid>
