@@ -46,7 +46,7 @@ const StepperComponent = () => {
     },
   })(StepConnector);
 
- 
+
   const StyledStepLabel = withStyles({
     label: {
       display: 'flex',

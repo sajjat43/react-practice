@@ -4,8 +4,9 @@ import './App.css';
 // import MuiList1  from './components/MuiList1';
 
 // import { Stepper } from '@mui/material';
-// import  MuiStepper  from './components/MuiStepper';
-import MuiLogin from './components/MuiLogin';
+import  MuiStepper  from './components/MuiStepper';
+// import MuiLogin from './components/MuiLogin';
+// import LandingPage from './components/LandingPage';
 // import MuiPage3 from './components/MuiPage3'
 // import MuiPage2 from './components/MuiPage2'
 // import MuiPages  from './components/MuiPages';
@@ -49,13 +50,14 @@ function App() {
       {/* <Campaign/> */}
       {/* <MuiLeadsPage/> */}
      {/* <MuiList/> */}
-     {/* <MuiStepper/> */}
+     <MuiStepper/>
      {/* <Stepper/> */}
      {/* <MuiPages/> */}
      {/* <MuiPage2/> */}
      {/* <MuiPage3 /> */}
      {/* <MuiList1/> */}
-     <MuiLogin/>
+     {/* <MuiLogin/> */}
+     {/* <LandingPage/> */}
     </div>
   )
 }

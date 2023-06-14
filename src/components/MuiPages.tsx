@@ -30,12 +30,19 @@ const LeadListForm = () => {
   const handleLinkedInSearchUrlChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setLinkedInSearchUrl(event.target.value);
   };
+
   const handleLinkedInProfileURLChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setLinkedInProfileURL(event.target.value);
   };
 
   const handleSubmit = () => {
-    // submit logic here
+    const newList = {
+      name: leadsPackName,
+      leads: [...leads], // Add your leads data here
+    };
+
+    // Perform any necessary logic with the newList object, such as sending it to an API or updating state.
+
     handleClose();
   };
 
@@ -54,7 +61,7 @@ const LeadListForm = () => {
           </Button>
         </Box>
       )}
-      <Dialog open={open} onClose={handleClose} maxWidth={"sm"} fullWidth>
+      <Dialog open={open} onClose={handleClose} maxWidth={'sm'} fullWidth>
         <DialogTitle sx={{ backgroundColor: 'primary.main', color: 'white', fontWeight: 'bold' }}>Create a list of leads</DialogTitle>
         <Divider sx={{ m: '0 !important' }} />
         <DialogContent>
@@ -103,7 +110,7 @@ const LeadListForm = () => {
             </Box>
           )}
         </DialogContent>
-        <Divider  />
+        <Divider />
         <DialogActions>
           <Button disabled={!leadsPackName} onClick={handleSubmit} color="primary">
             Create a list
