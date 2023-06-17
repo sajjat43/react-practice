@@ -37,7 +37,7 @@ function LandingPage() {
         <img src="/logo.svg" alt="Logo" className={classes.logo} />
       </Grid>
       <Grid item xs={12} className={classes.text}>
-        If you have an account, please click on the login button. If not, click on the registration button.
+        If you have an account, click on the login button. If not, click on the registration button.
       </Grid>
       <Grid container justifyContent="center" className={classes.buttonContainer}>
         <Button variant="contained" color="primary" className={classes.button}>
