@@ -50,5 +50,4 @@ function LandingPage() {
     </Grid>
   );
 }
-
 export default LandingPage;

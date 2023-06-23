@@ -3,7 +3,6 @@ import { Button, Checkbox, FormControlLabel, TextField, Select, MenuItem, Box,To
 import InfoIcon from '@mui/icons-material/Info';
 const MyComponent = () => {
 const tooltipText = "Pick this template to start getting more leads for your business";
-
 return (
 <Box>
   <Box>
