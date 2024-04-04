@@ -4,14 +4,16 @@ import './App.css';
 // import MuiList1  from './components/MuiList1';
 
 // import { Stepper } from '@mui/material';
-import  MuiStepper  from './components/MuiStepper';
+// import  MuiStepper  from './components/MuiStepper';
+// import  {ribbon}  from './components/ribbon';
+// import  MuiRibbon  from './components/MuiRibbon';
 // import MuiLogin from './components/MuiLogin';
 // import LandingPage from './components/LandingPage';
 // import MuiPage3 from './components/MuiPage3'
 // import MuiPage2 from './components/MuiPage2'
 // import MuiPages  from './components/MuiPages';
 // import {MuiList} from "./components/MuiList"
-// import Campaign from "./components/Campaign"
+import Campaign from "./components/Campaign"
 // import  MuiLeadsPage  from './components/MuiLeadsPage';
 // import MuiUploader from "./components/MuiUploader"
 
@@ -47,10 +49,10 @@ function App() {
       {/* <MuiAccordion/> */}
       {/* <MuiImagelist/> */}
       {/* <MuiUploader/> */}
-      {/* <Campaign/> */}
+      <Campaign/>
       {/* <MuiLeadsPage/> */}
      {/* <MuiList/> */}
-     <MuiStepper/>
+     {/* <MuiStepper/> */}
      {/* <Stepper/> */}
      {/* <MuiPages/> */}
      {/* <MuiPage2/> */}
@@ -58,6 +60,8 @@ function App() {
      {/* <MuiList1/> */}
      {/* <MuiLogin/> */}
      {/* <LandingPage/> */}
+     {/* <Ribbon/> */}
+     {/* <MuiRibbon /> */}
     </div>
   )
 }
