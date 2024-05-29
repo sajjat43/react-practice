@@ -13,8 +13,8 @@ import './App.css';
 // import MuiPage2 from './components/MuiPage2'
 // import MuiPages  from './components/MuiPages';
 // import {MuiList} from "./components/MuiList"
-import Campaign from "./components/Campaign"
-// import  MuiLeadsPage  from './components/MuiLeadsPage';
+// import Campaign from "./components/Campaign"
+import  MuiLeadsPage  from './components/MuiLeadsPage';
 // import MuiUploader from "./components/MuiUploader"
 
 // import { MuiImagelist } from './components/MuiImagelist';
@@ -49,8 +49,8 @@ function App() {
       {/* <MuiAccordion/> */}
       {/* <MuiImagelist/> */}
       {/* <MuiUploader/> */}
-      <Campaign/>
-      {/* <MuiLeadsPage/> */}
+      {/* <Campaign/> */}
+      <MuiLeadsPage/>
      {/* <MuiList/> */}
      {/* <MuiStepper/> */}
      {/* <Stepper/> */}
